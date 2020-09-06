@@ -1,0 +1,11 @@
+body{
+    display: flex;
+    flex-direction: column;
+    margin: -15px 25px !important;
+}
+video{
+    display: none !important;
+}
+canvas{
+    width: 320px;
+}

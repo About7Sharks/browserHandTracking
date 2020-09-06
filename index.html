@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hand Detection</title>
+    <!-- Load the handtrackjs model. -->
+    <script src="https://cdn.jsdelivr.net/npm/handtrackjs/dist/handtrack.min.js"> </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="main.css">
+
+</head>
+
+<body>
+    <h1>Live hand detection demo in browser</h1>
+    <p>I'm currently looking for a javascript library for fingie detection. I did come across handtrack.js which unfortunately only provides information on the hand and not on the hands digits :(</p>
+    <p>They also didn't have an example for using a webcam so I whipped this up for others to learn from</p>
+    <a class="waves-effect waves-light btn" id="trackbutton" style="width: 320px;"  type="button">Toggle Video</a>
+    <video  width="320" height="240" class="videobox canvasbox" autoplay id="myvideo"></video>
+    <canvas id="canvas" class="border"></canvas>
+   <script src="./index.js"></script>
+</body>
+</html>
